@@ -1,0 +1,92 @@
+:root{
+    font-size: 62.5%;
+    --transparent: rgba(255, 255, 255, 0.3);
+    --dark-color: #051937;
+    --bright-color: #A8EB12;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);
+}
+h1 {
+    font-size: 2rem;
+}
+p{
+    font-size: 1.6rem;
+}
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+main{
+    min-width: 250px;
+    max-width: 600px;
+    min-height: 100vh;
+    section{
+        background-color: var(--transparent);
+    }
+
+    #welcome-text{
+        padding: 28px 28px 0px 28px;
+        p:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+
+    /* #section-form {
+        padding: 28px 28px 0 28px;
+        h1 {
+            margin-bottom: 12px;
+        }
+        form label, form input{
+            margin-bottom: 4px;
+        }
+    }
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    p {
+        font-size: 1.4rem;
+    }
+    input{
+        max-width: 20ch;
+    }
+}
+label {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+input{
+    padding: 4px 4px;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+input:valid[required]{
+    border: 2px solid green;
+} */
+
+
+#create-account-container {
+    padding: 28px;
+    button{
+        padding: 1rem;
+        background: linear-gradient(to right top, #00bf72, #a8eb12);
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 12px;
+    }
+    button:hover{
+        background-color: red;
+    }
+}
