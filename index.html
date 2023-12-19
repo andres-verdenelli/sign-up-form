@@ -13,16 +13,17 @@
         <main>
             <section id="welcome-text">
                 <p>Sign up <i>now</i> to get started.</p>
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreaams.</p>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
                 <p>You <i>known</i> you want to</p>
             </section>
             <section id="section-form">
                 <h1>Let's do this!</h1>
-                <div id="form-container">
-                    <form action="" method="post">
+                <form action="" method="post"><!-- por ahora el action lo dejamos en blanco, es para ver a que url manda el formulario -->
+                    <div id="form-container">
                         <div class="form-box">
                             <label for="first-name">First name *</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="Jonh" required minlength="3">
+                                <input type="text" name="first-name" id="first-name" placeholder="Jonh" required minlength="3">
+                                <!-- el for y el id se usa para conectar el label, aunque si esta identado no pasas nada, y el name es el nombre de la variable cuando se envia el formulario por http-->
                             <p>test</p>
                         </div>
                         <div class="form-box">
@@ -50,11 +51,9 @@
                             <input type="password" name="confirm-password" id="confir-password" placeholder="*******" required minlength="8">
                             <p>test</p>
                         </div>
-                    </form>
-                </div>
-            </section>
-            <section id="create-account-container">
-                <button type="submit">Create Account</button>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
                 <p>Already have an account?&nbsp<a href="">Log in</a></p>
             </section>
         </main>
